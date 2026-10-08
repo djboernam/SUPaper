@@ -37,6 +37,18 @@ add_executable(SUPaper
 
     src/ui/MainWindow.cpp
     src/ui/MainWindow.h
+    src/ui/SheetCanvas.cpp
+    src/ui/SheetCanvas.h
+
+    src/importers/SKPImporter.cpp
+    src/importers/SKPImporter.h
+
+    src/rendering/ModelViewer.cpp
+    src/rendering/ModelViewer.h
+    src/rendering/PdfExporter.cpp
+    src/rendering/PdfExporter.h
+    src/rendering/SheetRenderer.cpp
+    src/rendering/SheetRenderer.h
 
     src/ruby/ExtensionManifest.cpp
     src/ruby/ExtensionManifest.h
@@ -44,9 +56,6 @@ add_executable(SUPaper
     src/ruby/RubyExtensionAPI.h
     src/ruby/RubyRuntime.cpp
     src/ruby/RubyRuntime.h
-
-    src/rendering/PdfExporter.cpp
-    src/rendering/PdfExporter.h
 )
 
 target_include_directories(SUPaper PRIVATE

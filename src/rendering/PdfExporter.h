@@ -2,6 +2,7 @@
 
 #include <QString>
 #include <QPdfWriter>
+#include <memory>
 
 class PdfExporter {
 public:

@@ -1,5 +1,7 @@
 #include "GeometryLayer.h"
 
+#include <algorithm>
+
 GeometryShape::GeometryShape(Type type) : type_(type) {
     id_ = QString("shape_%1").arg(static_cast<int>(type));
 }

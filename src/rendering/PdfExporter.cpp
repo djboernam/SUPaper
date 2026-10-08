@@ -1,6 +1,8 @@
 #include "PdfExporter.h"
 
 #include <QPainter>
+#include <QPageSize>
+#include <memory>
 
 PdfExporter::PdfExporter(const QString& outputPath)
     : output_path_(outputPath)
@@ -22,7 +24,6 @@ bool PdfExporter::exportSheet(const QString& sheetName) {
 
     painter.drawText(50, 50, sheetName);
     painter.end();
-
     return true;
 }
 

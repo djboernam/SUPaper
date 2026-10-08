@@ -1,5 +1,7 @@
 #include "ViewportSystem.h"
 
+#include <algorithm>
+
 ViewportLayer::ViewportLayer(const QString& name) : name_(name) {}
 
 ViewportSystem::ViewportSystem() = default;
